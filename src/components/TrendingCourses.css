@@ -1,0 +1,136 @@
+.trending{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:80px auto;
+
+}
+
+
+.trending h2{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.trending-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.trending-card{
+
+    background:#111827;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+
+
+.trending-card:hover{
+
+    transform:scale(1.04);
+
+    background:#2563eb;
+
+    box-shadow:
+    0 25px 50px rgba(37,99,235,.35);
+
+}
+
+
+
+.trend-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.trending-card h3{
+
+    font-size:23px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.trending-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+.trending-card span{
+
+    display:block;
+
+    margin:15px 0;
+
+    color:#dbeafe;
+
+}
+
+
+
+.trending-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:white;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+.trending-card button:hover{
+
+    background:#e5e7eb;
+
+}

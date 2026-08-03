@@ -1,0 +1,459 @@
+/* =========================================
+   CLASS SELECTION SECTION
+========================================= */
+
+.class-section {
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 80px auto;
+
+  color: white;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.class-section-header {
+  margin-bottom: 30px;
+}
+
+
+.class-section-label {
+  color: #60a5fa;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+
+.class-section-header h2 {
+  margin: 8px 0;
+
+  font-size: clamp(30px, 4vw, 42px);
+
+  letter-spacing: -1px;
+}
+
+
+.class-section-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.class-selection-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      5,
+      1fr
+    );
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.class-select-card {
+  min-height: 280px;
+
+  padding: 25px;
+
+  border-radius: 24px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background:
+    linear-gradient(
+      145deg,
+      #111827,
+      #0b1220
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Glow */
+
+.class-select-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -90px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(37, 99, 235, 0.15);
+
+  filter: blur(45px);
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.class-select-card:hover {
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(96, 165, 250, 0.4);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0, 0, 0, 0.4);
+}
+
+
+.class-select-card:hover::before {
+  transform:
+    scale(1.5);
+}
+
+
+/* =========================================
+   FEATURED CLASS
+========================================= */
+
+.featured-class {
+  background:
+    linear-gradient(
+      145deg,
+      #172554,
+      #0f172a
+    );
+
+  border-color:
+    rgba(59, 130, 246, 0.25);
+}
+
+
+.featured-class::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.08),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.class-card-badge {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  padding:
+    6px 9px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(59, 130, 246, 0.15);
+
+  color:
+    #60a5fa;
+
+  border:
+    1px solid
+    rgba(96, 165, 250, 0.2);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================
+   BIG NUMBER
+========================================= */
+
+.class-number {
+  font-size: 60px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  color:
+    rgba(255, 255, 255, 0.08);
+
+  letter-spacing:
+    -4px;
+
+  position: absolute;
+
+  top: 25px;
+  left: 25px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.class-select-card:hover
+.class-number {
+  color:
+    rgba(96, 165, 250, 0.15);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.class-card-content {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 65px;
+}
+
+
+.class-small-label {
+  color:
+    #64748b;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.class-card-content h3 {
+  margin:
+    8px 0;
+
+  font-size: 25px;
+
+  color:
+    #f8fafc;
+}
+
+
+.class-card-content p {
+  margin: 0;
+
+  color:
+    #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.class-card-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 18px;
+
+  margin-top: 20px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  color:
+    #94a3b8;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.class-arrow {
+  color:
+    #60a5fa;
+
+  font-size: 20px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.class-select-card:hover
+.class-arrow {
+  transform:
+    translateX(6px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .class-selection-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .class-section {
+    width: 92%;
+
+    margin:
+      55px auto;
+  }
+
+
+  .class-selection-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .class-select-card {
+    min-height:
+      245px;
+
+    padding:
+      20px;
+
+    border-radius:
+      20px;
+  }
+
+
+  .class-number {
+    font-size:
+      48px;
+
+    top:
+      20px;
+
+    left:
+      20px;
+  }
+
+
+  .class-card-content {
+    margin-top:
+      55px;
+  }
+
+
+  .class-card-content h3 {
+    font-size:
+      20px;
+  }
+
+
+  .class-card-content p {
+    font-size:
+      11px;
+  }
+
+
+  .class-card-badge {
+    top:
+      15px;
+
+    right:
+      15px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .class-selection-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .class-select-card {
+    min-height:
+      220px;
+  }
+
+}

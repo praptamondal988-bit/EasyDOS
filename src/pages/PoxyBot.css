@@ -1,0 +1,622 @@
+/* =========================================
+   POXY BOT
+   ISOLATED CSS
+   Does NOT affect Home Page
+========================================= */
+
+.poxybot-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #070b14;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.poxybot-navbar {
+  height: 72px;
+  width: 100%;
+  padding: 0 28px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  background: rgba(7, 11, 20, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+  backdrop-filter: blur(20px);
+
+  position: relative;
+  z-index: 10;
+}
+
+
+.poxybot-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #94a3b8;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  width: fit-content;
+
+  transition: 0.2s ease;
+}
+
+
+.poxybot-back:hover {
+  color: #60a5fa;
+}
+
+
+.poxybot-back span:first-child {
+  font-size: 20px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.poxybot-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.poxybot-brand img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: cover;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.25);
+}
+
+
+.poxybot-brand strong {
+  display: block;
+
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+.poxybot-brand small {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  margin-top: 3px;
+}
+
+
+.poxybot-online-dot {
+  width: 6px;
+  height: 6px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 8px rgba(34, 197, 94, 0.7);
+}
+
+
+/* =========================================
+   NEW CHAT
+========================================= */
+
+.poxybot-new-chat {
+  justify-self: end;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 9px 13px;
+
+  color: #cbd5e1;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+
+.poxybot-new-chat:hover {
+  background: rgba(59, 130, 246, 0.12);
+
+  border-color: rgba(96, 165, 250, 0.3);
+
+  color: #93c5fd;
+}
+
+
+/* =========================================
+   CHAT AREA
+========================================= */
+
+.poxybot-chat-area {
+  flex: 1;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 35px 20px 180px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.poxybot-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding-top: 20px;
+}
+
+
+.poxybot-hero-logo {
+  width: 92px;
+  height: 92px;
+
+  border-radius: 27px;
+
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 45px rgba(59, 130, 246, 0.15);
+}
+
+
+.poxybot-hero-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.poxybot-title h1 {
+  margin: 0;
+
+  font-size: 32px;
+
+  letter-spacing: -1px;
+}
+
+
+.poxybot-title h1 span {
+  background: linear-gradient(
+    90deg,
+    #60a5fa,
+    #a78bfa
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.poxybot-title p {
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin: 12px 0 28px;
+}
+
+
+/* =========================================
+   QUICK PROMPTS
+========================================= */
+
+.poxybot-prompts {
+  width: 100%;
+  max-width: 650px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+
+.poxybot-prompts button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px;
+
+  text-align: left;
+
+  color: #cbd5e1;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.075);
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.poxybot-prompts button:hover {
+  transform: translateY(-2px);
+
+  background: rgba(59, 130, 246, 0.08);
+
+  border-color: rgba(96, 165, 250, 0.25);
+}
+
+
+.poxybot-prompts button > span {
+  font-size: 20px;
+}
+
+
+.poxybot-prompts strong {
+  display: block;
+
+  font-size: 12px;
+
+  color: #e2e8f0;
+}
+
+
+.poxybot-prompts small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.poxybot-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+.poxybot-message-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+
+.poxybot-user-row {
+  justify-content: flex-end;
+}
+
+
+.poxybot-avatar {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  overflow: hidden;
+}
+
+
+.poxybot-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.poxybot-message {
+  max-width: 75%;
+
+  padding: 12px 15px;
+
+  border-radius: 15px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+}
+
+
+.poxybot-bot-message {
+  color: #dbeafe;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-top-left-radius: 4px;
+}
+
+
+.poxybot-user-message {
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  border-top-right-radius: 4px;
+
+  box-shadow:
+    0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================================
+   INPUT AREA
+========================================= */
+
+.poxybot-input-area {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 15px 20px 12px;
+
+  background:
+    linear-gradient(
+      to top,
+      #070b14 70%,
+      rgba(7, 11, 20, 0.85)
+    );
+
+  backdrop-filter: blur(15px);
+
+  z-index: 20;
+}
+
+
+.poxybot-input-box {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+
+  padding: 8px 8px 8px 15px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 17px;
+
+  transition: 0.2s ease;
+}
+
+
+.poxybot-input-box:focus-within {
+  border-color: rgba(96, 165, 250, 0.4);
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+
+.poxybot-input-box textarea {
+  flex: 1;
+
+  min-width: 0;
+
+  max-height: 120px;
+
+  padding: 7px 0;
+
+  color: #f8fafc;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+.poxybot-input-box textarea::placeholder {
+  color: #64748b;
+}
+
+
+/* =========================================
+   SEND
+========================================= */
+
+.poxybot-send {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 12px;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.poxybot-send:hover:not(:disabled) {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 8px 25px rgba(37, 99, 235, 0.35);
+}
+
+
+.poxybot-send:disabled {
+  opacity: 0.3;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.poxybot-note {
+  margin: 7px 0 0;
+
+  text-align: center;
+
+  color: #475569;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .poxybot-navbar {
+    padding: 0 14px;
+  }
+
+  .poxybot-back span:last-child {
+    display: none;
+  }
+
+  .poxybot-new-chat {
+    padding: 8px 10px;
+  }
+
+  .poxybot-new-chat span {
+    font-size: 16px;
+  }
+
+  .poxybot-new-chat {
+    font-size: 0;
+  }
+
+  .poxybot-new-chat span {
+    font-size: 18px;
+  }
+
+  .poxybot-chat-area {
+    padding: 25px 14px 170px;
+  }
+
+  .poxybot-title h1 {
+    font-size: 27px;
+  }
+
+  .poxybot-title p {
+    font-size: 13px;
+  }
+
+  .poxybot-prompts {
+    grid-template-columns: 1fr;
+  }
+
+  .poxybot-message {
+    max-width: 85%;
+  }
+
+  .poxybot-input-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}

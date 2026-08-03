@@ -1,0 +1,52 @@
+.learning-page{
+    width:90%;
+    max-width:1300px;
+    margin:70px auto;
+}
+
+.learning-page h1{
+    color:#fff;
+    font-size:46px;
+    text-align:center;
+    text-transform:capitalize;
+}
+
+.learning-page p{
+    color:#94a3b8;
+    text-align:center;
+    margin:15px 0 45px;
+}
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.learning-card{
+    background:linear-gradient(180deg,#1e293b,#111827);
+    border-radius:22px;
+    padding:30px;
+    cursor:pointer;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.learning-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(37,99,235,.30);
+}
+
+.learning-icon{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.learning-card h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.learning-card span{
+    color:#94a3b8;
+}

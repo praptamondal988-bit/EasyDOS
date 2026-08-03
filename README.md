@@ -1,59 +1,16 @@
-# 📚 EasyDOS
+# React + Vite
 
-**EasyDOS** is a modern learning platform designed for students of **Class 6–10** in Bangladesh.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-It brings together educational videos, PDFs, quizzes, notes, and study progress in one clean, fast, and user-friendly platform.
+Currently, two official plugins are available:
 
-## ✨ Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-* 🎥 Educational Videos
-* 📄 PDF Reader
-* 📝 Interactive Quiz
-* 📊 Progress Tracking
-* 🏅 Achievement Badges
-* 🎯 Daily Study Goals
-* 🔍 Smart Search
-* ⭐ Favourite Videos
-* 📌 Pinned Subjects
-* ⏳ Continue Learning
-* 📖 Reading History
-* 🌙 Premium Dark Theme
-* 📱 Responsive Design
-* 🌐 Bangla & English Support
+## React Compiler
 
-## 🎯 Target
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Helping Bangladeshi students learn smarter with a modern and distraction-free learning experience.
+## Expanding the ESLint configuration
 
-## 🚀 Roadmap
-
-### Version 1.0
-
-* Splash Screen
-* Home
-* Search
-* Banner Slider
-* Video Section
-* PDF Section
-* Quiz Section
-
-### Version 1.1
-
-* Progress Tracking
-* Badges
-* Daily Goals
-* Continue Learning
-
-### Version 1.2
-
-* Admin Dashboard
-* Analytics
-* Performance Improvements
-
-## 👨‍💻 Developed By
-
-**Prapto Mondal**
-
----
-
-**EasyDOS** — *Learn Smarter. Grow Faster.*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
