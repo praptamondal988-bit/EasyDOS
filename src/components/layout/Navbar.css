@@ -204,4 +204,25 @@
 
     font-size: 12px;
   }
+}.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .logo-text span {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    gap: 8px;
+  }
+
+  .navbar-actions {
+    gap: 6px;
+  }
 }
