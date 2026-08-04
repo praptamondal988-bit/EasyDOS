@@ -1,45 +1,31 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./SearchBar.css";
 
 function SearchBar() {
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (search.trim() === "") return;
+
+    navigate(`/search?q=${encodeURIComponent(search)}`);
+  };
+
   return (
-    <section className="search-section">
+    <div className="search-container">
+      <input
+        type="text"
+        placeholder="Search subjects, chapters, videos..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+      />
 
-      <div className="search-box">
-
-        <span className="search-icon">🔍</span>
-
-        <input
-          type="text"
-          placeholder="Search videos, PDFs, quizzes, subjects..."
-        />
-
-        <button className="search-btn">
-          Search
-        </button>
-
-      </div>
-
-      <div className="search-tags">
-
-        <span>Physics</span>
-
-        <span>Chemistry</span>
-
-        <span>Biology</span>
-
-        <span>Higher Math</span>
-
-        <span>ICT</span>
-
-        <span>PDF</span>
-
-        <span>Videos</span>
-
-        <span>Quiz</span>
-
-      </div>
-
-    </section>
+      <button onClick={handleSearch}>
+        🔍
+      </button>
+    </div>
   );
 }
 

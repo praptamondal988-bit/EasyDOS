@@ -159,4 +159,35 @@
   .navbar-logo h2 {
     font-size: 20px;
   }
+}/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-logo h2 {
+    font-size: 22px;
+  }
+
+  .navbar-logo span {
+    font-size: 12px;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+  }
+
+  .navbar-menu button {
+    font-size: 14px;
+  }
 }
